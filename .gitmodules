@@ -1,0 +1,6 @@
+[submodule "zencoding"]
+	path = zencoding
+	url = http://github.com/mattn/zencoding-vim.git
+[submodule "IndentGuides"]
+	path = IndentGuides
+	url = git://github.com/nathanaelkane/vim-indent-guides.git
