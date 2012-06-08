@@ -58,6 +58,7 @@ task :git_setup do
     `touch README`
     `git add .`
     `git commit -m 'Newly created JanusConfigurationSyncer Install'`
+    print "Please enter Git Repo URL: "
     repo_path = STDIN::gets
     `git remote add origin #{repo_path}`
     `git push -u origin master`
@@ -70,10 +71,11 @@ task :update do
   `git pull > /dev/null`
   puts "Updating Submodules"
   sh "git submodule foreach git pull origin master"
+  puts "Updating Rackfile"
+  sh 'curl -Lo- "http://bit.ly/jcs-rakefile" > ~/.janus/Rakefile'
 end
 
 task :install_copy do
-  Rake::Task[:git_setup].invoke
   puts "Installing Vimrc files from config directory"
   Rake::Task[:link_vim_conf_files].invoke
 end
@@ -83,6 +85,7 @@ task :install_create, :repo_path do
   Rake::Task[:move_existing_vim_files].invoke
   puts "Creating necessary folders"
   Rake::Task[:folders].invoke
+  Rake::Task[:git_setup].invoke
   Rake::Task[:install_copy].invoke
 end
 
