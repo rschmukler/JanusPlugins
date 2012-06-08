@@ -77,7 +77,7 @@ task :update do
   `git submodule update --init > /dev/null`
 
   puts "Updating Rackfile"
-  `curl -Lo- "http://bit.ly/jcs-rakefile" > ~/.janus/Rakefile > /dev/null`
+  sh 'curl -Lo- "http://bit.ly/jcs-rakefile" > ~/.janus/Rakefile'
 end
 
 task :install_copy do
