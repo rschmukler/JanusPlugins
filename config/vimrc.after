@@ -2,4 +2,5 @@ color herald
 call pathogen#infect()
 let g:indent_guides_start_level = 2
 let g:indent_guides_guide_size = 1
+let g:ctrlp_working_path_mode = 2
 IndentGuidesEnable
