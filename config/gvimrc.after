@@ -1,3 +1,4 @@
 set guioptions=aAce
 set transparency=5
 set guifont=Bitstream\ Vera\ Sans\ Mono:h12
+color moria
