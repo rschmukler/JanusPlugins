@@ -83,6 +83,7 @@ end
 task :install_copy do
   puts "Installing Vimrc files from config directory"
   Rake::Task[:link_vim_conf_files].invoke
+  Rake::Task[:update].invoke
 end
 
 task :install_create, :repo_path do

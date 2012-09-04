@@ -4,3 +4,6 @@
 [submodule "IndentGuides"]
 	path = IndentGuides
 	url = git://github.com/nathanaelkane/vim-indent-guides.git
+[submodule "vim-stylus"]
+	path = vim-stylus
+	url = git://github.com/wavded/vim-stylus.git
