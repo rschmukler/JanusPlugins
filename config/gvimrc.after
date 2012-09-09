@@ -1,5 +1,5 @@
 set guioptions=aAce
 set transparency=5
-set guifont=Bitstream\ Vera\ Sans\ Mono:h12
+set guifont=Bitstream\ Vera\ Sans\ Mono\ for\ Powerline:h12
 let g:Powerline_symbols = 'fancy'
 color Tomorrow-Night
