@@ -1,4 +1,5 @@
 set guioptions=aAce
 set transparency=5
 set guifont=Bitstream\ Vera\ Sans\ Mono:h12
+let g:Powerline_symbols = 'fancy'
 color Tomorrow-Night
