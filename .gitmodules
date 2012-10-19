@@ -16,3 +16,6 @@
 [submodule "html5.vim"]
 	path = html5.vim
 	url = git://github.com/othree/html5.vim.git
+[submodule "MatchTag"]
+	path = MatchTag
+	url = git://github.com/gregsexton/MatchTag.git
