@@ -3,9 +3,12 @@ call pathogen#infect()
 let g:indent_guides_start_level = 2
 let g:indent_guides_guide_size = 1
 let g:ctrlp_working_path_mode = 2
-IndentGuidesEnable
+set guifont=Source\ Code\ Pro\ for\ Powerline:h12
+let g:Powerline_symbols = 'fancy'
 
 filetype plugin on
 set ofu=syntaxcomplete#Complete
 
 let g:SuperTabDefaultCompletionType = "context"
+let &t_Co=256
+IndentGuidesEnable
