@@ -19,3 +19,6 @@
 [submodule "MatchTag"]
 	path = MatchTag
 	url = git://github.com/gregsexton/MatchTag.git
+[submodule "vim-slim"]
+	path = vim-slim
+	url = https://github.com/darthdeus/vim-slim
