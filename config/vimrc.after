@@ -12,3 +12,4 @@ set ofu=syntaxcomplete#Complete
 let g:SuperTabDefaultCompletionType = "context"
 let &t_Co=256
 IndentGuidesEnable
+autocmd! AuNERDTreeCmd FocusGained
