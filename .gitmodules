@@ -22,3 +22,6 @@
 [submodule "vim-slim"]
 	path = vim-slim
 	url = https://github.com/darthdeus/vim-slim
+[submodule "go-vim"]
+	path = go-vim
+	url = git://github.com/uggedal/go-vim.git
